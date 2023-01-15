@@ -85,8 +85,7 @@ header {
      margin-left: 30px;
 }
 .features-img img {
-     width: 342px;
-     height: 342px;
+     width: 100%;
 }
 .features-description{
      width: 50%;
@@ -140,7 +139,6 @@ header {
 .exp-details{
      box-shadow: 1px 1px 18px lightgrey;
      border-radius: 7px;
-     height: 170px;
      padding: 20px;
      margin: 20px;
      display: grid;
@@ -151,18 +149,39 @@ header {
      font-weight: 600;
 }
 .exp-details p{
-     font-size: 16px;
+     font-size: 13px;
      font-weight: 100;
 }
-.architect-image{
+.architect{
      width: 50%;
 }
-.architect-image img{
+.architect img{
      width: 100%;
+}
+.architect a{
+     text-decoration: none;
+     border-radius: 8px;
+     padding: 30px;
+     color: white;
+     background-color: #FF900E;
+     display: inline-block;
 }
 /* experience content end */
 
 /* achievement section start */
+.facts{
+     width: 80%;
+     margin: 0 auto;
+}
+.facts h1{
+     font-size: 45px;
+     font-weight: bold;
+}
+.facts p{
+     font-size: 16px;
+     padding-bottom: 80px;
+     padding-left: 20px;
+}
 .achievements{
      width: 80%;
      margin: 0 auto;
@@ -189,4 +208,22 @@ header {
      padding: 10px;
 }
 /* achievement section end */
+
+/* sponsor section start */
+.sponsors-desc{
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     margin: 50px auto;
+     text-align: center;
+     align-items: center;
+}
+.spnsors-images{
+     width: 80%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+     filter: grayscale(100%);
+}
+/* sponsor section end */
   
