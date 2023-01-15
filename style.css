@@ -119,7 +119,7 @@ header {
      align-items: center;
      flex-wrap: nowrap;
      width: 80%;
-     margin: 0 auto;
+     margin: 50px auto;
 }
 .exp-container-text{
      width: 50%;
@@ -155,16 +155,23 @@ header {
 .architect{
      width: 50%;
 }
+.architect {
+     position: relative;
+}
+
 .architect img{
      width: 100%;
 }
-.architect a{
-     text-decoration: none;
+
+.floating-btn {
      border-radius: 8px;
      padding: 30px;
      color: white;
      background-color: #FF900E;
      display: inline-block;
+     position: absolute;
+     bottom: -20px;
+     left: 10px;
 }
 /* experience content end */
 
@@ -226,4 +233,75 @@ header {
      filter: grayscale(100%);
 }
 /* sponsor section end */
-  
+   
+footer {
+     background-color: #ff8f0e86;
+     width: 60%;
+     margin: 50px auto;
+     padding: 30px 60px;
+     border-radius: 10px;
+}
+footer p {
+     text-align: center;
+}
+
+/* start responsive  */
+
+@media screen and (max-width :576px) {
+     .navbar {
+          flex-direction: column;
+     }
+
+     .nav-menu {
+          margin-top: 10px;
+          flex-direction: column;
+          align-items: center;
+          width: auto;
+     }
+
+     .feature {
+          flex-direction: column;
+     }
+     
+     .exp-container {
+          flex-direction: column;
+     }
+
+     .features-description,
+     .features-img {
+          width: 80%;
+          margin: auto;
+     }
+
+     .features-img {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .exp-container-text,
+     .architect {
+        width: 100%;
+
+    }
+
+    .achievements {
+     align-items: center;
+     gap: 30px;
+    }
+    .achievements,
+    .spnsors-images {
+         flex-direction: column;
+     }
+
+     .spnsors-images {
+       margin: auto;
+     }
+     
+    .spnsors-images img {
+     width: 60%;
+     margin: 30px auto;
+    }
+
+    .sponsors-desc {
+     margin: auto;
+    }
+}
